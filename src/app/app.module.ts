@@ -3,18 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServerComponent } from './server/server.component';
+import { WarningAlertComponent } from './warning-alert/warning-alert.component';
+import { SuccessAlertComponent } from './success-alert/success-alert.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    ServerComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  declarations: [AppComponent, WarningAlertComponent, SuccessAlertComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
