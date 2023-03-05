@@ -6,9 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  username = '';
+  displayDetails = false;
+  logs: number[] = [];
 
-  resetName() {
-    this.username = '';
+  display() {
+    this.displayDetails = !this.displayDetails;
+    this.logs.push(this.logs.length + 1);
   }
 }
